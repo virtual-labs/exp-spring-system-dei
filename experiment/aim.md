@@ -1,1 +1,1 @@
-### Aim of the experiment
+### To study the free - vibration of SDOF Mass-spring system 
