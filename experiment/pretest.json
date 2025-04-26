@@ -2,35 +2,100 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What does SDOF stand for?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Single Damp Oscillation Factor",
+        "b": "Simple Dynamic Oscillation Function",
+        "c": "Single Degree of Freedom",
+        "d": "Standard Degree of Flexibility"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a mass-spring system, the natural frequency is given by:",
+      "answers": {
+        "a": "√(k/m)",
+        "b": "√(m/k)",
+        "c": "k×m",
+        "d": "m/k"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The damping ratio ζ is defined as:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "c / (km)",
+        "b": "c / (2√(km))",
+        "c": "k / (2√(cm))",
+        "d": "m / (2√(kc))"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the unit of the damping coefficient c?",
+      "answers": {
+        "a": "N",
+        "b": "m/s",
+        "c": "Ns/m",
+        "d": "kg/s"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In an underdamped system, the motion is characterized by:",
+      "answers": {
+        "a": "No oscillation and fast return to equilibrium",
+        "b": "Oscillation with increasing amplitude",
+        "c": "Oscillation with decreasing amplitude",
+        "d": "Constant amplitude oscillation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is not an assumption in a basic SDOF mass-spring system?",
+      "answers": {
+        "a": "Mass is lumped",
+        "b": "Spring is linear and obeys Hooke's law",
+        "c": "Damping force is proportional to acceleration",
+        "d": "Only one degree of motion is considered"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens when damping ratio ζ=1?",
+      "answers": {
+        "a": "System becomes overdamped",
+        "b": "System becomes underdamped",
+        "c": "System is critically damped",
+        "d": "No damping is present"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "For a damped system, what is the form of amplitude decay over time?",
+      "answers": {
+        "a": "Linear",
+        "b": "Constant",
+        "c": "Exponential",
+        "d": "Sinusoidal"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The energy of a damped vibrating system over time:",
+      "answers": {
+        "a": "Increases",
+        "b": "Remains constant",
+        "c": "Decays exponentially",
+        "d": "Oscillates with constant magnitude"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

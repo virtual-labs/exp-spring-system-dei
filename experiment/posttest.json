@@ -2,35 +2,100 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What happens to the amplitude of oscillation in a damped SDOF system over time?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increases linearly",
+        "b": "Remains constant",
+        "c": "Decreases exponentially",
+        "d": "Oscillates with uniform energy"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The total mechanical energy of a damped system:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increases with time",
+        "b": "Remains constant",
+        "c": "Decreases due to damping",
+        "d": "Oscillates about a fixed value"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the experiment, which plot best indicates the presence of damping in the system?",
+      "answers": {
+        "a": "Displacement vs. Time showing constant amplitude",
+        "b": "Velocity vs. Time with no change",
+        "c": "Amplitude vs. Time showing exponential decay",
+        "d": "Frequency vs. Time showing increase"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the damping ratio ζ<1, the system is:",
+      "answers": {
+        "a": "Overdamped",
+        "b": "Critically damped",
+        "c": "Underdamped",
+        "d": "Not damped at all"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In your virtual lab experiment, what parameter had the greatest effect on how quickly vibrations died out?",
+      "answers": {
+        "a": "Mass m",
+        "b": "Spring constant k",
+        "c": "Damping coefficient c",
+        "d": "Time interval"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following parameters can be calculated after analyzing the experimental plot of displacement vs. time?",
+      "answers": {
+        "a": "Natural frequency only",
+        "b": "Mass only",
+        "c": "Damping ratio and damping coefficient",
+        "d": "Spring stiffness only"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of response is seen when the system returns to equilibrium without oscillating?",
+      "answers": {
+        "a": "Underdamped",
+        "b": "Overdamped",
+        "c": "Critically damped",
+        "d": "Both B and C"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the damped system, energy is primarily dissipated through:",
+      "answers": {
+        "a": "Gravity",
+        "b": "Friction or air resistance",
+        "c": "Spring deformation",
+        "d": "Inertia"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the virtual lab, which graph would show you the exponential decay of energy most clearly?",
+      "answers": {
+        "a": "Velocity vs. Time",
+        "b": "Displacement vs. Time",
+        "c": "Energy vs. Time",
+        "d": "Frequency vs. Time"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
