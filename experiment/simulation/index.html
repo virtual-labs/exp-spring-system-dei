@@ -1,13 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Free - Vibration of SDOF Mass-Spring System - DEI</title>
 </head>
 <body>
-		<!-- Your code goes here-->
+    <div id="mainContainer">
+        <div id="container">
+            <div id="header">
+                <h2 >Free - Vibration of SDOF Mass-Spring System</h2>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+            </div>
+
+            <div id="simulation">
+
+
+            <div id="leftPane">
+
+                <div style="margin-top: 50px; padding-left: 20px;" id="inputs_container">
+
+                
+
+                    <div id="massInput">
+                        <label for="mass">Mass (m) in kg:</label>
+                        <br>
+                        <input type="range" id="mass" min="1" step="0.1" max="5" value="1" />
+                        <span id="mass_value">1</span>
+                      </div>
+                      
+                      <div id="stiffnessInput">
+                        <label for="stiffness">Spring stiffness (k) in N/m:</label>
+                        <br>
+                        <input type="range" id="stiffness" min="100" step="10" max="250" value="100" />
+                        <span id="stiffness_value">100</span>
+                      </div>
+                      
+                      <div id="dampingInput">
+                        <label for="damping">Damping coefficient (c) in Ns/m:</label>
+                        <br>
+                        <input type="range" id="damping" min="0" step="1" max="20" value="0" />
+                        <span id="damping_value">0</span>
+                      </div>
+                      
+                      <div id="displacementInput">
+                        <label for="displacement">Initial displacement (X₀) in meters:</label>
+                        <br>
+                        <input type="range" id="displacement" min="0.05" step="0.01" max="0.2" value="0.05" />
+                        <span id="displacement_value">0.05</span>
+                      </div>
+                      
+                      <div id="velocityInput">
+                        <label for="velocity">Initial velocity (V₀) in m/s:</label>
+                        <br>
+                        <input type="range" id="velocity" min="0" step="0.1" max="1" value="0" />
+                        <span id="velocity_value">0</span>
+                      </div>
+
+                 
+
+
+
+                  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                    <label for="lock_button" style="font-size: 16px; color: black; font-weight: bold;">Lock the values</label>
+                    <input type="checkbox" id="lock_button" style="margin-top: 10px; transform: scale(1.5);" onclick="checkBox()">
+                  </div>
+                  
+
+                
+                </div>
+
+                
+                
+                
+                
+                
+            
+
+                
+
+                
+
+
+            </div>
+
+            <div id="middlePane">
+
+                <div id="canvasContainer">
+                  <canvas id="cnv1" width="700px" height="250px"></canvas>
+
+                  <div id="graph-container">
+                  <canvas id="cnv2" width="400px" height="250px"></canvas>
+                  <canvas id="cnv3" width="350px" height="250px"></canvas>
+                  </div>
+
+                </div>
+               
+                
+                
+            </div>
+
+
+            <div  id="rightPane" >
+              <div class="controls">
+                <div class="control_heading"><b>Controls:</b></div>
+                <div class="play">
+                  Start
+                  <button type="play" id="playButton">
+                    <img src="images/play.png" />
+                  </button>
+                </div>
+                <div class="pause">
+                  Pause
+                  <button type="button" id="pauseButton">
+                    <img src="images/pause.png" alt="Pause" />
+                  </button>
+                </div>
+                <div id="reset">
+                  Reset
+                  <button type="reset" id="resetButton">
+                    <img src="images/reset.png" />
+                  </button>
+                </div>
+              </div>
+  
+              <div  id="update_cor">Start the simulation by pressing start.</div>
+              <br>
+              <div class="stopwatch" id="stopwatch">Time: 0.00 s</div>
+  
+           
+  
+  
+             
+
+
+  <div class="output">    
+    <div id="button-container">
+      
+       <button id="formula-button" onclick="showFormulaeModal()">Show Formulae</button>
+       <button hidden  id="showObservationsBtn">Show Observations</button>
+      
+       <button  hidden id="download-graph">Download Graph</button>
+    </div>
+              
+
+
+</div>
+
+<!-- Formulae Modal Structure -->
+<div id="formulaeModal" class="modal">
+  <div class="modal-content">
+    <!-- Close Button -->
+    <span id="closeFormulaeModal" class="close-button">&times;</span>
+    
+    <!-- Formulae Container -->
+    <div id="formulaeContainer">
+      <h3>Formulae</h3>
+      <ul id="formulaeList"></ul>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal Structure -->
+ <div id="resultsModal">
+  <div class="modal-content">
+     <!-- Close Button -->
+     <span id="closeResultsModal" class="close-button">&times;</span>
+     <!-- Modal Header -->
+     <h2 class="modal-title">Results and Observations</h2>
+     <!-- Input Data Container -->
+     <div id="inputDataContainer" class="input-data-container">
+        <ul id="inputDataList"></ul>
+     </div>
+     <!-- Table Container -->
+     <div id="resultsTableContainer" class="results-table-container">
+        <!-- Table will be populated dynamically -->
+     </div>
+     <!-- Download Button -->
+     <button id="download-btn" class="download-button" onclick="downloadResults()">Download Data</button>
+  </div>
+</div>
+
+
+            </div>
+
+            
+
+
+
+            
+
+        </div>
+
+    </div>
+
+
+
+    <script src="/js/script.js"></script>
+    <div id="copyright" title="Developer : Harsh Pathak,Aysha and Ambuj Kulshrestha , Dayalbagh Educational Instiute,Agra "></div>
+      <div id="Developer_information" 
+         title="Developer Name:
+         1.Harsh Pathak
+         (06hpathak@gmail.com)
+         2.Aysha
+         (satsangiaysha@gmail.com)
+         3.Ambuj Kulshrestha
+         (ambujkul.dei@gmail.com)
+         Instiute Name: Dayalbagh Educational Instiute, Agra">
+      </div>
+    
 </body>
+
 </html>
