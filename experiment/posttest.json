@@ -99,6 +99,18 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following describes the relationship between damping ratio and oscillation decay rate in the virtual simulation?",
+      "answers": {
+        "A": "A higher ζ leads to slower decay.",
+        "B": "A higher ζ leads to faster decay.",
+        "C": "ζ only affects frequency, not decay rate.",
+        "D": "ζ must be exactly 1 for the amplitude to decay."
+      },
+      "correctAnswer": "B",
+      "difficulty": "beginner"
     }
+
   ]
 }
