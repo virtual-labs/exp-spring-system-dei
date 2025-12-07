@@ -99,6 +99,18 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "How does increasing the damping ratio affect the displacement–time plot?",
+      "answers": {
+        "A": "Oscillations increase in amplitude",
+        "B": "Oscillations continue indefinitely",
+        "C": "Oscillations decay faster and may disappear for higher ζ",
+        "D": "Frequency increases with damping"
+      },
+      "correctAnswer": "C",
+      "difficulty": "beginner"
     }
+
   ]
 }
