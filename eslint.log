@@ -1,0 +1,14 @@
+
+/home/runner/work/exp-spring-system-dei/exp-spring-system-dei/experiment/simulation/js/script.js
+   61:7   warning  'checkBox' is assigned a value but never used   no-unused-vars
+  252:11  warning  'yScale' is assigned a value but never used     no-unused-vars
+  285:11  warning  'yAxisY' is assigned a value but never used     no-unused-vars
+  515:5   warning  'peakTimes' is assigned a value but never used  no-unused-vars
+  534:9   warning  'v' is assigned a value but never used          no-unused-vars
+  604:10  warning  'showFormulaeModal' is defined but never used   no-unused-vars
+  719:23  warning  'x_0' is assigned a value but never used        no-unused-vars
+  719:28  warning  'v_0' is assigned a value but never used        no-unused-vars
+  896:11  warning  'deltaTime' is assigned a value but never used  no-unused-vars
+
+✖ 9 problems (0 errors, 9 warnings)
+
